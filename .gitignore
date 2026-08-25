@@ -1,0 +1,31 @@
+# Archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Variables privadas y token de Telegram
+.env
+
+# Base de datos local
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Rostros registrados
+rostros/referencias/*
+!rostros/referencias/.gitkeep
+
+# Fotografías temporales
+temp/*
+!temp/.gitkeep
+
+# Modelos descargados por DeepFace
+.deepface/
+
+# Configuraciones locales
+.vscode/
