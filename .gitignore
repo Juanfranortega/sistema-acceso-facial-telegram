@@ -29,3 +29,9 @@ temp/*
 
 # Configuraciones locales
 .vscode/
+
+# Ignorar fotografías locales
+rostros/pruebas/*.jpeg
+rostros/pruebas/*.jpg
+rostros/referencias/*.jpeg
+rostros/referencias/*.jpg

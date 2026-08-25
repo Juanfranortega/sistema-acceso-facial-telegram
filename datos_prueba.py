@@ -45,12 +45,12 @@ def insertar_datos_prueba():
     # Referencias faciales ficticias
     registrar_perfil_facial(
         usuario_id=empleado_id,
-        ruta_referencia="rostros/referencias/empleado_prueba.jpg"
+        ruta_referencia="rostros/referencias/josue1.jpeg"
     )
 
     registrar_perfil_facial(
         usuario_id=administrador_id,
-        ruta_referencia="rostros/referencias/administrador_prueba.jpg"
+        ruta_referencia="rostros/referencias/administrador_prueba.jpeg"
     )
 
     # Información empresarial
