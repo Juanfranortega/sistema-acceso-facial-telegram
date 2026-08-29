@@ -11,7 +11,6 @@ logging.getLogger('tensorflow').setLevel(logging.ERROR)
 def procesar_acceso_telegram(telegram_id, ruta_foto_nueva):
     print(f"Buscando al usuario con Telegram ID: {telegram_id}...")
     usuario = buscar_usuario_por_telegram(telegram_id)
-
     if usuario is None:
         print("ACCESO DENEGADO: Usuario no encontrado en la base de datos.")
         return
@@ -49,6 +48,6 @@ def procesar_acceso_telegram(telegram_id, ruta_foto_nueva):
 
 if __name__ == "__main__":
     id_prueba = 100000001
-    foto_intento = "rostros/pruebas/otra_persona.jpeg"
+    foto_intento = "rostros/pruebas/josue2.jpeg"
 
     procesar_acceso_telegram(id_prueba, foto_intento)
