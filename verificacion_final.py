@@ -1,11 +1,5 @@
-import os
-import logging
 from database import buscar_usuario_por_telegram
-from deepface import DeepFace
-
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-logging.getLogger('tensorflow').setLevel(logging.ERROR)
+from reconocimiento import verificar_rostro
 
 
 def procesar_acceso_telegram(telegram_id, ruta_foto_nueva):
@@ -24,14 +18,14 @@ def procesar_acceso_telegram(telegram_id, ruta_foto_nueva):
     print(f"Iniciando procesamiento biométrico con {modelo}...")
 
     try:
-        resultado = DeepFace.verify(
-            img1_path=ruta_foto_nueva,
-            img2_path=ruta_referencia,
-            model_name=modelo
+        resultado = verificar_rostro(
+            ruta_referencia,
+            ruta_foto_nueva,
+            modelo
         )
 
-        es_mismo = resultado["verified"]
-        distancia = resultado["distance"]
+        es_mismo = resultado["verificado"]
+        distancia = resultado["distancia"]
 
         print("-" * 40)
         if es_mismo:

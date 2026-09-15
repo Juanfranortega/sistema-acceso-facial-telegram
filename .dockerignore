@@ -1,0 +1,15 @@
+.git
+.github
+.env
+.venv
+venv
+__pycache__
+*.pyc
+data/*.db
+data/*.sqlite*
+rostros/referencias/*.jpg
+rostros/referencias/*.jpeg
+temp/*
+.deepface
+.cache
+

@@ -30,6 +30,12 @@ temp/*
 # Configuraciones locales
 .vscode/
 
+# Archivos locales de despliegue
+.railway/
+
+# Modelos y caché
+.cache/
+
 # Ignorar fotografías locales
 rostros/pruebas/*.jpeg
 rostros/pruebas/*.jpg
