@@ -1,6 +1,8 @@
 python-telegram-bot==22.8
-python-dotenv>=1.0,<2
+python-dotenv==1.2.3
 Flask>=3.0,<4
+Werkzeug==3.1.8
 deepface==0.0.100
-opencv-python==4.10.0.84
-tf-keras>=2.16
+opencv-python==4.8.1.78
+tensorflow==2.15.0
+tf-keras==2.15.0

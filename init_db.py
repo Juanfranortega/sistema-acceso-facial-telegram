@@ -33,7 +33,7 @@ def sembrar_informacion_inicial():
     guardar_informacion(
         "Reporte administrativo",
         "Información reservada para usuarios con nivel de administrador.",
-        2
+        3
     )
     print("Información empresarial de demostración preparada.")
 

@@ -1,43 +1,50 @@
 # Archivos generados por Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
 # Entornos virtuales
 .venv/
 venv/
+env/
 
-# Variables privadas y token de Telegram
+# Variables privadas y credenciales
 .env
+.env.*
+!.env.example
 
-# Base de datos local
-data/*.db
-data/*.sqlite
-data/*.sqlite3
+# Bases de datos locales y datos biométricos
+/data/
+*.db
+*.sqlite
+*.sqlite3
 
-# Rostros registrados
-rostros/referencias/*
-!rostros/referencias/.gitkeep
+# Fotografías de referencia locales
+/rostros/referencias/*
+!/rostros/referencias/.gitkeep
 
-# Fotografías temporales
-temp/*
-!temp/.gitkeep
+# Fotografías utilizadas en pruebas
+/rostros/pruebas/*
+!/rostros/pruebas/.gitkeep
 
-# Modelos descargados por DeepFace
+# Fotografías y archivos temporales
+/temp/*
+!/temp/.gitkeep
+
+# Modelos descargados y caché de DeepFace
 .deepface/
-
-# Configuraciones locales
-.vscode/
-
-# Archivos locales de despliegue
-.railway/
-
-# Modelos y caché
 .cache/
 
-# Ignorar fotografías locales
-rostros/pruebas/*.jpeg
-rostros/pruebas/*.jpg
-rostros/referencias/*.jpeg
-rostros/referencias/*.jpg
+# Configuraciones locales de IDE
+.idea/
+.vscode/
+
+# Registros locales
+*.log
+
+# Scripts locales de migración y pruebas
+/migrations/
+/pruba_base.py
+
+# Configuraciones locales de despliegue
+.railway/
